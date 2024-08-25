@@ -1,0 +1,19 @@
+meta {
+  name: fetch one
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BASE_URL}}/user/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"vaxad",
+    "email":"vaxad2@gmail.com",
+    "password":"123456789"
+  }
+}

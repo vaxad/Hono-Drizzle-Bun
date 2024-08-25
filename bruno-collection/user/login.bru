@@ -1,0 +1,18 @@
+meta {
+  name: login
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{BASE_URL}}/user/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email":"vaxad@gmail.com",
+    "password":"123456789"
+  }
+}

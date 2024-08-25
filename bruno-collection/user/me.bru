@@ -1,0 +1,23 @@
+meta {
+  name: me
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{BASE_URL}}/user/me
+  body: none
+  auth: none
+}
+
+headers {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "name": "vaxad",
+    "email": "vaxad2@gmail.com",
+    "password": "123456789"
+  }
+}
