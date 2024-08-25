@@ -1,0 +1,23 @@
+meta {
+  name: fetch mine
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BASE_URL}}/post
+  body: none
+  auth: none
+}
+
+headers {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "name":"vaxad",
+    "email":"vaxad2@gmail.com",
+    "password":"123456789"
+  }
+}

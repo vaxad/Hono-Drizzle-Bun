@@ -3,12 +3,12 @@ import { validator } from 'hono/validator'
 
 export const createUserValidator = validator('json', (value, c) => {
     const { name, email, password } = value;
-    createUserCheck({ name, email, password }, c);
+    return createUserCheck({ name, email, password }, c);
 })
 
 export const loginUserValidator = validator('json', (value, c) => {
     const { email, password } = value;
-    loginUserCheck({ email, password }, c);
+    return loginUserCheck({ email, password }, c);
 })
 
 

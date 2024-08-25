@@ -15,6 +15,13 @@
       "when": 1724561581110,
       "tag": "0001_swift_gwen_stacy",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1724568397721,
+      "tag": "0002_early_firebrand",
+      "breakpoints": true
     }
   ]
 }

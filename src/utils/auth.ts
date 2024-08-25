@@ -1,4 +1,4 @@
-import { decode, sign, verify } from 'hono/jwt'
+import { sign, verify } from 'hono/jwt'
 import { JWTPayload } from 'hono/utils/jwt/types'
 
 
