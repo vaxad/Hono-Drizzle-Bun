@@ -4,8 +4,8 @@ import { drizzle } from 'drizzle-orm/neon-http';
 import { neon } from '@neondatabase/serverless';
 import { migrate } from 'drizzle-orm/neon-http/migrator';
 
-// if (!process.env.DATABASE_URL) throw new Error('No database url provided')
-const sql = neon("postgresql://hono-test_owner:nbXzB0o7VywL@ep-sweet-bonus-a1dcrjkn.ap-southeast-1.aws.neon.tech/hono-test?sslmode=require");
+if (!process.env.DATABASE_URL) throw new Error('No database url provided')
+const sql = neon(process.env.DATABASE_URL);
 const db = drizzle(sql);
 
 const main = async () => {
